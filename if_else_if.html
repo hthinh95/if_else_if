@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let name = prompt('Nhập tên người dùng')
+        let matKhau;
+        let result;
+        if (name == "Admin") {
+            matKhau = prompt('Nhập mật khẩu')
+            if (matKhau == "TheMaster") {
+                result = "Welcome";
+            } else if (matKhau == "") {
+                result = "Canceled";
+            } else {
+                result = "Wrong password";
+            }
+        } else if (name == "") {
+            result = "Canceled";
+        } else {
+            result = "I don't know you";
+        }
+        alert(result);
+    </script>
+</body>
+
+</html>
